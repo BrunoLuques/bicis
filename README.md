@@ -1,3 +1,5 @@
+![compuMundoHiperMegaRed](compuMundoHiperMegaRed.jpg)
+
 # Depósitos de bicicletas
 
 ![muchas_bicis](muchasbicis.jpg "Buscá tu bici si te animás")
