@@ -1,8 +1,9 @@
 import bicis.*
 import deposito.* 
-import accesorios.*
+import Accesorios.*
 
-describe "bicisDelDeposito"{
+describe "algunasBicis"{
+	
 	// bici 1 
 	const aurorita = new Bici(rodado = 28, largo = 150, marca = "Olmo", accesorios = [new Farolito()]) 
 	
@@ -10,6 +11,7 @@ describe "bicisDelDeposito"{
 	const esplendor = new Bici(rodado = 26, largo = 110, marca = "Legnano", accesorios = [new Farolito(),new Canasto(volumen = 8),new MorralDeBici(largo = 21, tieneOjoDeGato = true)])
 	//bici 3 
 	const cleta = new Bici(rodado = 20, largo = 90, marca = "Legnano", accesorios = [new MorralDeBici(largo = 6, tieneOjoDeGato = false)])
+	// deposito 1 
 	const deposito1 = new Deposito(bicis = [aurorita,esplendor,cleta])
 	
 	
@@ -25,14 +27,8 @@ describe "bicisDelDeposito"{
 		assert.notThat(deposito1.esDepositoNocturno())
 	}
 	
-	test "tieneBiciParaCargar_Kilos"{
+	test "tieneBiciParaCargarXKilos"{
 		assert.that(deposito1.tieneAlgunaBiciQuePuedeLlevar(10))
 		assert.notThat(deposito1.tieneAlgunaBiciQuePuedeLlevar(50))
 	}
 }
-
-
-
-
-
-
