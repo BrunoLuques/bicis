@@ -18,7 +18,7 @@ class MorralDeBici {
 	
 	method peso(){return 1.2}	
 	method carga(){return largo/3}
-	method esLuminoso(){return tieneOjoDeGato}
+	method esLuminoso(){return tieneOjoDeGato}// comentario
 }
 
 
