@@ -1,3 +1,5 @@
+![compuMundoHiperMegaRed](compuMundoHiperMegaRed.jpg)
+
 # Depósitos de bicicletas
 
 ![muchas_bicis](muchasbicis.jpg "Buscá tu bici si te animás")
@@ -5,14 +7,20 @@
 Nos piden construir un modelo cuyo objetivo es informatizar parte de la gestión de los depósitos municipales de bicicletas en Ciudad Gótica.
 
 ## 1. Bicis con sus accesorios
+
 De cada bicicleta se informa: el _rodado_ (p.ej. 26), el _largo_ en centímetros (p.ej. 120 para una bici de 1.20 metros de largo), la _marca_ (p.ej. "Legnano"), y los accesorios. Estos últimos (los accesorios) aportan distintas características a la bici en la que se instalan.
 
 A partir de estos datos, debe poder obtenerse la siguiente información referida a una bici:
-- _altura_: se calcula como `rodado * 2.5 + 15`.
-- _velocidad de crucero_: si la bici tiene más de 120 cm, entonces se calcula como `rodado + 6`, si no, como `rodado + 2`.
-- _carga_: es la suma de la carga que puede llevar cada accesorio.
-- _peso_: es la suma de `rodado / 2` más el peso total de los accesorios.
-- _tieneLuz_: es verdadero si al menos uno de los accesorios es luminoso.
+ 
+* _altura_: se calcula como `rodado * 2.5 + 15`.
+ 
+* _velocidad de crucero_: si la bici tiene más de 120 cm, entonces se calcula como `rodado + 6`, si no, como `rodado + 2`.
+ 
+* _carga_: es la suma de la carga que puede llevar cada accesorio.
+ 
+* _peso_: es la suma de `rodado / 2` más el peso total de los accesorios.
+ 
+* _tieneLuz_: es verdadero si al menos uno de los accesorios es luminoso.
 
 Se deben contemplar los siguientes accesorios
 1. **Farolito**: pesa 0.5 kg, no lleva carga (o sea, lleva 0 kg de carga), es luminoso.

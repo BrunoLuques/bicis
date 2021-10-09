@@ -1,5 +1,7 @@
-import Accesorios.*
+
+import accesorios.*
 import deposito.*
+
 
 class Bici {
 	var property rodado = null
@@ -14,6 +16,5 @@ class Bici {
 	method peso(){return rodado/2 + accesorios.sum({accs => accs.peso()}) }
 	method tieneLuz(){ return accesorios.any({ accs => accs.esLuminoso()})}
 	method cantidadDeAccesoriosLivianos(){ return accesorios.count({accs => accs.peso() < 1})}
-		
 }
 

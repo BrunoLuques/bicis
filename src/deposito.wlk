@@ -1,5 +1,5 @@
 import bicis.*
-import Accesorios.*
+import accesorios.*
 
 class Deposito { 
 	var property bicis = []
@@ -17,10 +17,8 @@ class Deposito {
 	}
 	
 	method tieneAlgunaBiciQuePuedeLlevar(unaCarga){
-		return bicis.any({ bici => bici.carga()/1 > unaCarga})
+		return bicis.any({ bici => bici.carga() > unaCarga})
 	}
-	/*si tiene bicicleta para llevar una carga expresada en kg. 
-	La condición es que para al menos una de las bicis del depósito, la carga que puede llevar sea mayor a los kilos que se piden.*/
 	
 	method marcaDeBiciRapida(){
 		return bicis.max({ bici => bici.velocidadDeCrucero()}).marca()
@@ -57,7 +55,6 @@ Se hizo la luz
 poder preguntarle a un depósito si "se hizo la luz". Esto es verdadero si a partir de que entró 
 la primer bici con luz, todas las bicis que entraron después también tienen luz. Obviamente, para resolver 
 esto tienen que memorizar las bicis en alguna forma que permita saber en qué orden se fueron agregando*/
-
 
 
 
