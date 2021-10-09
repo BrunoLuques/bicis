@@ -8,6 +8,7 @@ import deposito.*
 Indicar qué hay que agregar, y qué hay que tocar. Relacionar con los conceptos de "contrato" 
 y / o "polimorfismo". En dos frases, bien cortito.
 
+
 Para agregar un nuevo tipo de accesorio, necesitamos crear una nueva clase, que respete el contrato que lleva el resto de
 *  los accesorios para poder mantener el polimorfismo 
 */
