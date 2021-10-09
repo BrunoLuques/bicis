@@ -1,5 +1,5 @@
 import bicis.*
-import accesorios.*
+import Accesorios.*
 
 class Deposito { 
 	var property bicis = []
@@ -32,15 +32,17 @@ class Deposito {
 		return bicis.count({ bici => bici.accesorios().size() == 0 })
 	}
 	
-	method bicisCompanieras(unaBici){
-		return bicis.find({ bici => bici.marca() == unaBici.marca() and  bici.largo().between(unaBici.largo()-10,unaBici.largo()+10)})
+	method haybicisCompanieras(unaBici){
+		return  bicis.any({bici => bici.esCompanieraDe(unaBici)})
 	}
+	
 }
 
 
 
 
 /* 
+ 
 Van algunos desafíos, que son eso, desafíos, se escapan del contenido standard de la materia. 
 Tener algunas nociones sobre estructuras de datos puede servir para resolverlos.
 

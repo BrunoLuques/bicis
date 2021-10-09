@@ -31,4 +31,26 @@ describe "algunasBicis"{
 		assert.that(deposito1.tieneAlgunaBiciQuePuedeLlevar(10))
 		assert.notThat(deposito1.tieneAlgunaBiciQuePuedeLlevar(50))
 	}
+	
+	test "marcaDeBiciMasRapida" {
+		assert.equals(deposito1.marcaDeBiciRapida(), "Olmo")
+	}
+	
+	test "cargaTotalBicisLargas" {
+		assert.equals(deposito1.cargaTotalBicisLargas(),0)
+	}
+	
+	test "cantidadDeBicisSinAccesorios" {
+		assert.equals(deposito1.bicisSinAccesorios(),0)
+	}
+	
+	test "bicisCompanieras" {
+		assert.that(deposito1.haybicisCompanieras(cleta))
+	}
 }
+
+
+
+
+
+

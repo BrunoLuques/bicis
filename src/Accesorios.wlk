@@ -8,20 +8,8 @@ import deposito.*
 Indicar qué hay que agregar, y qué hay que tocar. Relacionar con los conceptos de "contrato" 
 y / o "polimorfismo". En dos frases, bien cortito.
 
-Incluir la respuesta en el archivo en el que se definen los accesorios. Pónganlo como se indica 
-abajo así lo toma como comentario y no afecta al programa.*/
-
-
-/*
-Para agregar otros accesorios hay que crearlos como objetos polimorficos para las bicis,
-ya que cada accesorio tiene que cumplir con su contrato 
-* se comporta de manera distinta y esto impide que sean una clase.
-* 
-Para agregar otros accesorios hay que definirlos como objetos polimorficos para la bicis
-* 
-Para agregar otros accesorios hay que crear objectos con el mismo contrato que los anteriores
-*  accesorios para mantener el polimorfismo con las bicis 
-
+Para agregar un nuevo tipo de accesorio, necesitamos crear una nueva clase, que respete el contrato que lleva el resto de
+*  los accesorios para poder mantener el polimorfismo 
 */
 
 class Farolito{

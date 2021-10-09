@@ -1,5 +1,5 @@
 
-import accesorios.*
+import Accesorios.*
 import deposito.*
 
 
@@ -16,5 +16,10 @@ class Bici {
 	method peso(){return rodado/2 + accesorios.sum({accs => accs.peso()}) }
 	method tieneLuz(){ return accesorios.any({ accs => accs.esLuminoso()})}
 	method cantidadDeAccesoriosLivianos(){ return accesorios.count({accs => accs.peso() < 1})}
+	
+	method esCompanieraDe(unaBici){
+		return marca == unaBici.marca() and (unaBici.largo() - largo) <= 10 and self !=  unaBici
+	}
+	
 }
 
