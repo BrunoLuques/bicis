@@ -2,7 +2,7 @@ import bicis.*
 import deposito.* 
 import Accesorios.*
 
-describe "algunasBicis"{
+describe "Test de depósito"{
 	
 	// bici 1 
 	const aurorita = new Bici(rodado = 28, largo = 150, marca = "Olmo", accesorios = [new Farolito()]) 
